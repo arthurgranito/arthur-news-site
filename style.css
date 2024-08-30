@@ -38,6 +38,10 @@ header {
     margin-inline: auto;
 }
 
+header > .desktop{
+    display: none;
+}
+
 header nav{
     position: fixed;
     background-color: var(--almost-white);
