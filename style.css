@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --almost-white: #fffdfa;
+    --dark-blue: #00001a;
+    --gun-metal: #5e607a;
+    --vermillion: #f15d51;
+    --yellow: #e9aa52;
+    --silver: #c5c6ce;
+}
+
+body{
+    padding: 1.75rem 1rem;
+    background-color: var(--almost-white);
+}
+
+body.escurecer::before{
+    content: '';
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color:rgba(0, 0, 26, 0.5);
+    top: 0;
+    left: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    max-width: 1110px;
+    margin-inline: auto;
+}
+
+header nav{
+    position: fixed;
+    background-color: var(--almost-white);
+    right: -16rem;
+    top: 0;
+    height: 100vh;
+    width: 16rem;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1.5rem;
+    transition: all ease 0.7s;
+}
+
+header nav.abrir{
+    right: 0;
+}
+
+header nav.fechar{
+    right: -16rem;
+}
+
+header nav button{
+    align-self: flex-end;
+    margin-bottom: 4rem;
+}
+
+header nav a{
+    text-decoration: none;
+    color: var(--dark-blue);
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+}
+
+header h1{
+    font-size: 3rem;
+}
+
+header button{
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.primeira-secao{
+    margin-bottom: 4rem;
+}
+
+.primeira-secao img{
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+}
+
+.primeira-secao h1{
+    font-size: 2.2rem;
+    line-height: 100%;
+    color: var(--dark-blue);
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.primeira-secao p{
+    color: var(--gun-metal);
+    margin-bottom: 1rem;
+}
+
+.primeira-secao button{
+    padding: 0.75rem 2rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.275rem;
+    line-height: 1.5rem;
+    border: none;
+    outline: none;
+    color: var(--almost-white);
+    background-color: #313131;
+}
+
+.segunda-secao{
+    margin-bottom: 4rem;
+    background-color: #313131;
+    padding: 1.5rem 0.9rem;
+}
+
+.margin-border-padding{
+    border-bottom: 1px solid var(--gun-metal);
+    margin-bottom: 1.75rem;
+    padding-bottom: 1.75rem;
+}
+
+.segunda-secao h2{
+    color: var(--almost-white);
+    font-size: 2rem;
+    line-height: 100%;
+    margin-bottom: 2.2rem;
+}
+
+
+.segunda-secao h3{
+    color: var(--silver);
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.segunda-secao p{
+    color: var(--almost-white);
+    font-size: 0.9375rem;
+    line-height: 1.625rem;
+}
+
+.terceira-secao>div{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.terceira-secao img{
+    width: 7rem;
+    height: 155px;
+    object-fit: cover;
+}
+
+.terceira-secao strong{
+    color: #313131;
+    font-size: 2rem;
+    line-height: 100%;
+}
+
+.terceira-secao a{
+    text-decoration: none;
+}
+
+.terceira-secao h2{
+    color: var(--gun-metal);
+    font-size: 1.125rem;
+    font-weight: 800;
+    line-height: 1.5rem;
+    margin-block: 0.6rem;
+    transition: all ease 0.5s;
+}
+
+.terceira-secao p {
+    font-size: 0.9375rem;
+    line-height: 1.625rem;
+    columns: var(--silver);
+}
+
+@media (min-width: 1110px){
+    header>button{
+        display: none;
+    }
+
+    header .desktop{
+        display: flex;
+        gap: 2.5rem;
+    }
+
+    header .desktop a{
+        font-size: 0.9375rem;
+        line-height: 1.625rem;
+        text-decoration: none;
+        color: var(--gun-metal);
+        transition: all ease 0.5s;
+    }
+
+    header .desktop a:hover{
+        color: var(--yellow);
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.75rem;
+        padding: 0 5rem;
+    }
+
+    .primeira-secao{
+        grid-column: 1/3;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.75rem;
+    }
+
+    .primeira-secao img{
+        margin: 0;
+        grid-column: 1/3;
+        height: 100%;
+    }
+
+    .primeira-secao>div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .primeira-secao h1{
+        font-size: 2.7rem;
+    }
+
+    .primeira-secao p{
+        font-size: 1.2rem;
+    }
+
+    .primeira-secao button{
+        width: 50%;
+        border: 2px solid transparent;
+        cursor: pointer;
+        transition: all ease 0.5s;
+    }
+
+    .primeira-secao button:hover{
+        background-color: var(--almost-white);
+        border: 2px solid #313131;
+        color: #313131;
+    }
+
+    .segunda-secao{
+        height: 75%;
+    }
+
+    .segunda-secao h2{
+        font-size: 2.5rem;
+    }
+
+    .terceira-secao{
+        display: flex;
+        grid-column: 1/4;
+    }
+
+    .terceira-secao h2:hover{
+        color: var(--yellow);
+    }
+}
