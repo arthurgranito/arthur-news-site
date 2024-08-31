@@ -195,6 +195,31 @@ header button{
     columns: var(--silver);
 }
 
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #00001a;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+footer a p{
+    text-decoration: underline;
+}
+
+footer p{
+    font-size: 12px;
+}
+
 @media (min-width: 1110px){
     header>button{
         display: none;
