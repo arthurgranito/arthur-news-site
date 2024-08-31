@@ -13,4 +13,4 @@ botaoFechar.addEventListener('click', () => {
     nav.classList.remove('abrir');
     nav.classList.add('fechar');
     body.classList.remove('escurecer');
-})
+});
