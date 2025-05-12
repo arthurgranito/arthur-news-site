@@ -5,12 +5,10 @@
 ## 📸 Preview
 
 ### Desktop
-![AG. - Desktop Preview](./path/to/desktop-preview.png)
+![AG. - Desktop Preview](./assets/desktop-preview.png)
 
 ### Mobile
-![AG. - Mobile Preview](./path/to/mobile-preview.png)
-
-> Replace `./path/to/desktop-preview.png` with the actual path or URL of your images in the repository.
+![AG. - Mobile Preview](./assets/mobile-preview.png)
 
 ## 🧰 Technologies Used
 
