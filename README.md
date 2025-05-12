@@ -5,10 +5,10 @@
 ## 📸 Preview
 
 ### Desktop
-![AG. - Desktop Preview](./assets/desktop-preview.png)
+<img src="./assets/desktop-preview.png" alt="Desktop Preview"/>
 
 ### Mobile
-![AG. - Mobile Preview](./assets/mobile-preview.png)
+<img src="./assets/mobile-preview.png" alt="Mobile Preview"/>
 
 ## 🧰 Technologies Used
 
