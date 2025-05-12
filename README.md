@@ -29,4 +29,4 @@ To run this project locally:
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/arthurgranito/arthur-noticias-botafogo.git
+   git clone https://github.com/arthurgranito/arthur-news-site.git
